@@ -6,7 +6,7 @@ some films thanks the OMDb API.
 
 We created 3 files:
 
-*Main.js – A file wrote in Javascript language that calls
+* Main.js – A file wrote in Javascript language that calls
 the file App.vue.
 * App.vue – The extension (.vue) stands for the name of
 a framework of Javascript. And it prints the table of the
@@ -16,6 +16,21 @@ FilmDetail.vue
 because it passes some parameters like the film title,
 the year of release and the genre.
 
+## * App.vue
+
+* At first we declared the library axios that makes the HTTP
+requests and the component from file FilmDetail that
+passes info of the film.
+
+```javascript
+import axios from "axios";
+import FilmDetail from "./FilmDetail";
+export default {
+  name: "FilmList",
+  components: {
+    FilmDetail
+  },
+```
 
 
 ## Project setup
